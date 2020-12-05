@@ -5,17 +5,19 @@
   </head>
   <body>
     This website is a work in progress: soon to be Hamilton's Unliscensed Pokemon Game
-    <div class="buttons">
-      <button>Press 1</button>
-      <button>Press 2</button>
-      <button>Press 3</button>
+    <div>
+      <button id="btn1">Press 1</button>
+      <button id="btn1">Press 2</button>
+      <button id="btn1">Press 3</button>
     </div>
     <script>
-      const buttonContainer = document.querySelector('.buttons');
+      const btn1 = document.getElementById('btn1');
+      const btn2 = document.getElementById('btn2');
+      const btn3 = document.getElementById('btn3');
       console.log('buttonContainer', buttonContainer);
-      buttonContainer.addEventListener('click', event => {
-      console.log(event.target.value)
-    })
+      btn1.addEventListener('click', event => {console.log(event.target.value)})
+      btn2.addEventListener('click', event => {console.log(event.target.value)})
+      btn3.addEventListener('click', event => {console.log(event.target.value)})
     </script>
     
   </body>
