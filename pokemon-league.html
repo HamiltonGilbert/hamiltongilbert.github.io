@@ -3,7 +3,7 @@
   <head>
     <title> Pokemon League </title>
   </head>
-  <body>
+  <body style="margin: 0;">
     This website is a work in progress: soon to be Hamilton's Unliscensed Pokemon Game
     <div>
       <button id="btn1">Press 1</button>
@@ -14,7 +14,9 @@
       const btn1 = document.getElementById('btn1');
       const btn2 = document.getElementById('btn2');
       const btn3 = document.getElementById('btn3');
-      console.log('buttonContainer', buttonContainer);
+      console.log('buttonContainer', btn1);
+      console.log('buttonContainer', btn2);
+      console.log('buttonContainer', btn3);
       btn1.addEventListener('click', event => {console.log(event.target.value)})
       btn2.addEventListener('click', event => {console.log(event.target.value)})
       btn3.addEventListener('click', event => {console.log(event.target.value)})
