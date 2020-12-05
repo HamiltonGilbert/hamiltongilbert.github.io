@@ -4,6 +4,19 @@
     <title> Pokemon League </title>
   </head>
   <body>
-    This website is a work in progress: Soon to be Hamilton's Unliscensed Pokemon Game
+    This website is a work in progress: soon to be Hamilton's Unliscensed Pokemon Game
+    <div class="buttons">
+      <button>Press 1</button>
+      <button>Press 2</button>
+      <button>Press 3</button>
+    </div>
+    <script>
+      const buttonContainer = document.querySelector('.buttons');
+      console.log('buttonContainer', buttonContainer);
+      buttonContainer.addEventListener('click', event => {
+      console.log(event.target.value)
+    })
+    </script>
+    
   </body>
 </html>
